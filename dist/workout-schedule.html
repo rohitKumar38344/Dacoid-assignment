@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Schedule</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="font-montserrat">
+      <header class="mb-6">
+        <h2
+          class="text-center text-heading-black mb-3 font-semibold text-xl before:content-['<'] before:bg-input-bg-cl before:block before:w-5 before:rounded-s before:absolute relative before:left-0"
+        >
+          Workout Schedule
+        </h2>
+        <p class="text-center mb-3 font-montserrat font-semibold text-xs">
+          &lt;<span class="mx-2"><time datetime="2024-02">Feb 2024</time></span
+          >&gt;
+        </p>
+        <div class="date-strip flex justify-between">
+          <div class="rounded-xl p-4">
+            <p class="text-center text-xs">
+              Sun<br /><span class="text-xl font-semibold">5</span>
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-blue-st to-blue-end text-white rounded-xl p-4"
+          >
+            <p class="text-center text-xs">
+              Mon<br /><span class="text-xl font-semibold">6</span>
+            </p>
+          </div>
+          <div class="rounded-xl p-4">
+            <p class="text-center text-xs">
+              Tue<br /><span class="text-xl font-semibold">7</span>
+            </p>
+          </div>
+          <div class="rounded-xl p-4">
+            <p class="text-center text-xs">
+              Wed<br /><span class="text-xl font-semibold">8</span>
+            </p>
+          </div>
+          <div class="rounded-xl p-4">
+            <p class="text-center text-xs">
+              Thu<br /><span class="text-xl font-semibold">9</span>
+            </p>
+          </div>
+        </div>
+      </header>
+      <section class="timeline flex flex-col font-semibold text-xs relative">
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>06:00 AM</span>
+        </p>
+        <p
+          class="border-b relative border-b-placeholder-cl p-3 before:p-2 before:content-['Ab_Workout,_7:30am'] before:block before:absolute before:text-white before:rounded-3xl before:bg-gradient-to-tr before:from-task-grad-st before:to-task-grad-end before:right-7 before:top-6"
+        >
+          <span>07:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>08:00 AM</span>
+        </p>
+        <p
+          class="border-b border-b-placeholder-cl p-3 relative before:p-2 before:content-['Upperbody_Workout,_9am'] before:block before:absolute before:text-white before:rounded-3xl before:bg-gradient-to-tr before:from-task-grad-st before:to-task-grad-end before:right-7 before:top-6"
+        >
+          <span>09:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>10:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>11:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>12:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>01:00 AM</span>
+        </p>
+        <p
+          class="border-b border-b-placeholder-cl p-3 relative before:p-2 before:content-['Lowerbody_Workout,_3pm'] before:block before:absolute before:left-20 before:rounded-3xl before:bg-input-bg-cl before:top-1"
+        >
+          <span>02:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>03:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>04:00 AM</span>
+        </p>
+        <p class="border-b border-b-placeholder-cl p-3">
+          <span>05:00 AM</span>
+        </p>
+        <div
+          class="absolute right-4 bottom-12 grid font-normal place-content-center add-task w-16 h-16 rounded-full bg-gradient-to-tr from-task-grad-st to-task-grad-end"
+        >
+          <span class="text-white text-4xl">+</span>
+        </div>
+      </section>
+      <footer class="relative bg-white">
+        <nav class="p-6 h-19">
+          <ul class="flex justify-center items-center">
+            <li class="mr-6">
+              <a href=""><img src="images/home-icon.png" alt="" /></a>
+            </li>
+            <li class="mr-auto">
+              <a href=""></a><img src="images/timeline-icon.png" alt="" />
+            </li>
+            <li class="mr-6">
+              <a href=""><img src="images/camera-icon.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="images/user-icon.png" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="absolute -top-3 left-36 grid font-normal place-content-center search-task w-16 h-16 rounded-full bg-gradient-to-tr from-search-blue-st to-search-blue-end"
+        >
+          <img src="images/search-icon.png" alt="" />
+          <!-- <span class="text-white text-4xl">+</span> -->
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

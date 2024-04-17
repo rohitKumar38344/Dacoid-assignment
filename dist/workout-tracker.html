@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="font-montserrat p-3">
+      <h2
+        class="text-center text-heading-black mb-12 font-semibold text-xl before:content-['<'] before:bg-input-bg-cl before:block before:w-5 before:rounded-s before:absolute relative before:left-0"
+      >
+        Workout Tracker
+      </h2>
+      <section
+        class="workout-activity mb-4 before:content-['Good_job'] after:content-['less_than_320cal'] before:text-xs after:text-xs relative before:absolute before:left-32 before:-top-6 after:-top-6 after:absolute after:right-4"
+      >
+        <img src="images/chart.png" alt="" />
+      </section>
+      <div
+        class="alert mb-16 rounded-md p-3 flex gap-1 items-center bg-gradient-to-r from-alert-grad-st to-alert-grad-end"
+      >
+        <img src="images/alert-icon.png" alt="alert-icon" />
+        <p class="font-medium text-xs">
+          You've burned fewer calories than yesterday. Time to get moving!
+        </p>
+      </div>
+      <section class="upcoming-workout flex flex-col gap-3 mb-3">
+        <header class="flex justify-between">
+          <h3 class="font-semibold text-base text-heading-black">
+            Upcoming Workout
+          </h3>
+          <p class="font-medium text-xs text-placeholder-cl">See more</p>
+        </header>
+        <div
+          class="flex gap-2 rounded-xl workout shadow-[-4px_8px_25px_-8px_rgba(0,0,0,0.15)] p-4"
+        >
+          <img src="images/workout-1.png" alt="" />
+          <div class="flex justify-between flex-grow">
+            <div class="flex flex-col gap-3">
+              <h3 class="text-heading-black text-xs font-medium">
+                Full Body Workout
+              </h3>
+              <p class="text-placeholder-cl text-[0.6rem] font-medium">
+                Today 3pm
+              </p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div
+          class="flex gap-2 rounded-xl workout shadow-[-4px_8px_25px_-8px_rgba(0,0,0,0.15)] p-4"
+        >
+          <img src="images/workout-2.png" alt="" />
+          <div class="flex justify-between flex-grow">
+            <div class="flex flex-col gap-3">
+              <h3 class="text-heading-black text-xs font-medium">
+                Upper Body Workout
+              </h3>
+              <p class="text-placeholder-cl text-[0.6rem] font-medium">
+                4 Feb, 3:30 pm
+              </p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="training relative top-16">
+        <h3 class="font-semibold text-base text-heading-black mb-3">
+          What Do You Want to Train
+        </h3>
+        <div class="flex justify-between bg-[#8CB1FF] rounded-xl p-4 h-32">
+          <div class="flex-col gap-5">
+            <p class="text-xs font-medium">Full Body Workout</p>
+            <p class="text-xs font-medium">Arms</p>
+            <p class="text-xs font-medium">Chest</p>
+          </div>
+          <img src="images/training.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <footer class="relative bg-white">
+      <nav class="p-6 h-19">
+        <ul class="flex justify-center items-center">
+          <li class="mr-6">
+            <a href=""><img src="images/home-icon.png" alt="" /></a>
+          </li>
+          <li class="mr-auto">
+            <a href=""></a><img src="images/timeline-icon.png" alt="" />
+          </li>
+          <li class="mr-6">
+            <a href=""><img src="images/camera-icon.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="images/user-icon.png" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="absolute -top-3 left-36 grid font-normal place-content-center search-task w-16 h-16 rounded-full bg-gradient-to-tr from-search-blue-st to-search-blue-end"
+      >
+        <img src="images/search-icon.png" alt="" />
+        <!-- <span class="text-white text-4xl">+</span> -->
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <section id="content-1" class="hidden">
+        <form
+          action=""
+          method="post"
+          class="register-form flex flex-col gap-4 max-w-lg p-4 mb-4"
+        >
+          <h2 class="text-heading-black font-roboto text-xl font-semibold">
+            Create an account
+          </h2>
+          <p>
+            <input
+              class="signup-form__input h-12 w-full bg-input-bg-cl rounded-xl p-4 placeholder-styling"
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="First Name"
+            />
+            <!-- <label class="absolute left-[50rem]" for="fname">First Name</label> -->
+          </p>
+          <p>
+            <input
+              class="signup-form__input h-12 w-full bg-input-bg-cl rounded-xl p-4 placeholder-styling"
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Last Name"
+            />
+            <!-- <label class="absolute left-[50rem]" for="lname">Last Name</label> -->
+          </p>
+          <p>
+            <input
+              class="signup-form__input h-12 w-full bg-input-bg-cl rounded-xl p-4 placeholder-styling"
+              type="email"
+              name="email"
+              id="signup-email"
+              placeholder="Email"
+            />
+            <!-- <label class="absolute left-[50rem]" for="email">First Name</label> -->
+          </p>
+          <p>
+            <input
+              class="signup-form__input h-12 bg-input-bg-cl w-full rounded-xl p-4 placeholder-styling"
+              type="password"
+              name="password"
+              id="signup-password"
+              placeholder="Password"
+            />
+            <!-- <label class="absolute left-[50rem]" for="password"></label> -->
+          </p>
+          <div class="flex items-center w-full justify-between mb-36">
+            <input
+              type="checkbox"
+              class="w-5 h-5 mr-2"
+              name="agree"
+              id="agree"
+            />
+            <label
+              for="agree"
+              class="form-placeholder-cl font-montserrat font-medium text-xs grow"
+              >By proceeding, I agree to all
+              <a href="#" class="text-link-cl">T&C</a> and
+              <a href="#" class="text-link-cl">Privacy Policy</a></label
+            >
+          </div>
+          <button
+            class="text-white w-full rounded-xl py-2 bg-gradient-to-r from-blue-st to-blue-end font-montserrat font-semibold text-base"
+          >
+            Create an Account
+          </button>
+        </form>
+      </section>
+      <section id="content-2">
+        <form
+          action=""
+          method="post"
+          class="login-form flex flex-col gap-4 p-4"
+        >
+          <h2 class="text-heading-black font-roboto text-xl font-semibold">
+            Welcome back
+          </h2>
+          <p>
+            <input
+              class="signup-form__input h-12 w-full bg-input-bg-cl rounded-xl p-4 placeholder-styling"
+              type="email"
+              name="email"
+              id="login-email"
+              required
+              placeholder="Email"
+            />
+            <!-- <label class="absolute left-[50rem]" for="email">First Name</label> -->
+          </p>
+          <p class="relative">
+            <input
+              class="signup-form__input h-12 bg-input-bg-cl w-full rounded-xl p-4 placeholder-styling"
+              type="password"
+              name="login-password"
+              required
+              id="password"
+              placeholder="Password"
+            />
+            <span class="absolute hide-pwd bg-input-bg-cl w-4 h-4 top-4 right-4"
+              ><img src="images/eye-off.png" alt="eye-off"
+            /></span>
+            <!-- <label class="absolute left-[50rem]" for="password"></label> -->
+          </p>
+          <div class="text-placeholder-cl mb-36">
+            <a href="#" class="underline">Forgot your password?</a>
+          </div>
+          <button
+            class="text-white w-full mb-3.5 rounded-xl py-2 bg-gradient-to-r from-blue-st to-blue-end font-montserrat font-semibold text-base"
+          >
+            Sign in
+          </button>
+        </form>
+      </section>
+      <div class="social-signin-div">
+        <div class="social-divider">
+          <span class="py-0 px-2.5 bg-white">or</span>
+        </div>
+        <div class="social flex justify-center gap-4 mb-5">
+          <div
+            class="rounded-lg w-11 h-11 border border-placeholder-cl grid place-content-center"
+          >
+            <a href="#"
+              ><img src="images/google-icon.png" alt="google signup"
+            /></a>
+          </div>
+          <div
+            class="rounded-lg w-11 h-11 border border-placeholder-cl grid place-content-center"
+          >
+            <a href="#"
+              ><img src="images/fb-icon.png" alt="facebook signup"
+            /></a>
+          </div>
+        </div>
+        <p class="text-center hidden login-msg">
+          Already have an account?
+          <a
+            href="#"
+            class="underline text-link-cl font-montserrat font-medium text-xs login-link"
+            >Login</a
+          >
+        </p>
+        <p class="text-center register-msg">
+          Don't have an account yet?
+          <a
+            href="#"
+            class="underline text-link-cl font-montserrat font-medium text-xs create-account-link"
+            >Create an account</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
